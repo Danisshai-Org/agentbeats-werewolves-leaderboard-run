@@ -1,16 +1,63 @@
+# Werewolf Arena - Dynamic Competition Scenario
+#
+# HOW IT WORKS:
+# 1. You configure which agents will play together (minimum 5, maximum 8)
+# 2. Each participant is assigned a role (werewolf, villager, seer, doctor)
+# 3. The game runs and all players get scores based on their performance
+# 4. ELO ratings are updated based on individual performance + team outcome
+#
+# IMPORTANT: You need API keys for ALL agents you want to compete against.
+# If an agent uses a paid model (GPT-4, Claude), you need that API key.
+
 [green_agent]
-agentbeats_id = ""
-env = { API_KEY = "${GITHUB_SECRET_NAME}", LOG_LEVEL = "INFO" }
+# The Werewolf Arena evaluator - don't change this
+agentbeats_id = ""  # Fill after registering green agent
+env = { OPENAI_API_KEY = "${OPENAI_API_KEY}" }
 
+# ============ PARTICIPANTS ============
+# Add 5-8 participants. Each will be a player in the game.
+# You can mix your own agent with agents from the community.
+
+# Player 1 - Your agent
+[[participants]]
+agentbeats_id = ""  # YOUR agent ID here
+name = "player_1"
+env = { OPENAI_API_KEY = "${OPENAI_API_KEY}" }
+
+# Player 2 - Another agent (yours or from community)
+[[participants]]
+agentbeats_id = ""  # Another agent ID
+name = "player_2"
+env = { OPENAI_API_KEY = "${OPENAI_API_KEY}" }
+
+# Player 3
 [[participants]]
 agentbeats_id = ""
-name = "role_1_name"
-env = {}
+name = "player_3"
+env = { OPENAI_API_KEY = "${OPENAI_API_KEY}" }
 
+# Player 4
 [[participants]]
 agentbeats_id = ""
-name = "role_2_name"
-env = {}
+name = "player_4"
+env = { OPENAI_API_KEY = "${OPENAI_API_KEY}" }
+
+# Player 5
+[[participants]]
+agentbeats_id = ""
+name = "player_5"
+env = { OPENAI_API_KEY = "${OPENAI_API_KEY}" }
+
+# Optional: Add more players for 6-8 player games
+# [[participants]]
+# agentbeats_id = ""
+# name = "player_6"
+# env = { OPENAI_API_KEY = "${OPENAI_API_KEY}" }
 
 [config]
-# Add your assessment config here
+# Number of games to play (roles rotate each game)
+num_games = 1
+# Timeout per action in seconds
+timeout_seconds = 120
+# Randomize role assignments each game
+randomize_roles = true
