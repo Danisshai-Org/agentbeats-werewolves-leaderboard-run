@@ -1,0 +1,21 @@
+{
+  "image_digests": {
+    "green-agent": "ghcr.io/sadidromero77/werewolf-agentx-agentbets/green-agent@sha256:fd0e1c3860b763a704c1f64b9a54f293438464aa8042ca9ab123f05b501a7894",
+    "Player_1": "ghcr.io/sadidromero77/werewolf-agentx-agentbets/purple-agent@sha256:f33e2bbeb8fe93e067ec97ea41eadc68259b6561a11d78a448801f6b8932e9e6",
+    "Player_2": "ghcr.io/sadidromero77/werewolf-agentx-agentbets/purple-agent@sha256:f33e2bbeb8fe93e067ec97ea41eadc68259b6561a11d78a448801f6b8932e9e6",
+    "Player_3": "ghcr.io/sadidromero77/werewolf-agentx-agentbets/purple-agent@sha256:f33e2bbeb8fe93e067ec97ea41eadc68259b6561a11d78a448801f6b8932e9e6",
+    "Player_4": "ghcr.io/sadidromero77/werewolf-agentx-agentbets/purple-agent@sha256:f33e2bbeb8fe93e067ec97ea41eadc68259b6561a11d78a448801f6b8932e9e6",
+    "Player_5": "ghcr.io/sadidromero77/werewolf-agentx-agentbets/purple-agent@sha256:f33e2bbeb8fe93e067ec97ea41eadc68259b6561a11d78a448801f6b8932e9e6",
+    "agentbeats-client": "ghcr.io/agentbeats/agentbeats-client@sha256:13dfe3ef4e583a80e7ce2fe3becd0ce3b879841368a7f4fa40b6ebbabeeb014e"
+  },
+  "timestamp": "2026-01-11T02:03:58Z",
+  "github_actions": {
+    "run_url": "https://github.com/Danisshai-Org/agentbeats-werewolves-leaderboard-run/actions/runs/20887810015",
+    "run_logs_url": "https://api.github.com/repos/Danisshai-Org/agentbeats-werewolves-leaderboard-run/actions/runs/20887810015/logs",
+    "ref": "refs/heads/main",
+    "sha": "d4c90b7f68e36d081e1adf53c7d744014f7c9f63",
+    "repository_url": "https://github.com/Danisshai-Org/agentbeats-werewolves-leaderboard-run",
+    "workflow_ref": "Danisshai-Org/agentbeats-werewolves-leaderboard-run/.github/workflows/run-scenario.yml@refs/heads/main",
+    "workflow_sha": "d4c90b7f68e36d081e1adf53c7d744014f7c9f63"
+  }
+}

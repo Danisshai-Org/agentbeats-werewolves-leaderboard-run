@@ -1,0 +1,143 @@
+{
+  "participants": {
+    "Player_1": "019baa7c-4c29-75b3-9978-e61bf465079f",
+    "Player_2": "019baa7c-4c29-75b3-9978-e61bf465079f",
+    "Player_3": "019baa7c-4c29-75b3-9978-e61bf465079f",
+    "Player_4": "019baa7c-4c29-75b3-9978-e61bf465079f",
+    "Player_5": "019baa7c-4c29-75b3-9978-e61bf465079f"
+  },
+  "results": [
+    {
+      "winner": "villagers",
+      "rounds_played": 1,
+      "game_log": [
+        {
+          "event": "role_assignment",
+          "roles": {
+            "Player_1": "werewolf",
+            "Player_3": "seer",
+            "Player_5": "doctor",
+            "Player_2": "villager",
+            "Player_4": "villager"
+          }
+        },
+        {
+          "event": "night_phase",
+          "round": 1,
+          "target": "Player_3",
+          "protected": "Player_2",
+          "eliminated": "Player_3"
+        },
+        {
+          "event": "vote_exile",
+          "round": 1,
+          "votes": {
+            "Player_1": "Player_4",
+            "Player_2": "Player_1",
+            "Player_4": "Player_1",
+            "Player_5": "Player_1"
+          },
+          "exiled": "Player_1",
+          "role": "werewolf"
+        }
+      ],
+      "scores": [
+        {
+          "player_name": "Player_1",
+          "role": "werewolf",
+          "team": "werewolves",
+          "won": false,
+          "survived": false,
+          "rounds_survived": 1,
+          "metrics": {
+            "win_score": 0.0,
+            "survival_score": 1.0,
+            "influence_score": 0.29000000000000004,
+            "consistency_score": 0.7,
+            "sabotage_score": 0.0,
+            "deception_score": 0.4,
+            "detection_score": 0.0,
+            "aggregate_score": 0.3435
+          },
+          "elo_delta": null
+        },
+        {
+          "player_name": "Player_2",
+          "role": "villager",
+          "team": "villagers",
+          "won": true,
+          "survived": true,
+          "rounds_survived": 1,
+          "metrics": {
+            "win_score": 1.0,
+            "survival_score": 1.0,
+            "influence_score": 0.38,
+            "consistency_score": 0.7,
+            "sabotage_score": 0.0,
+            "detection_score": 0.6000000000000001,
+            "deception_score": 0.0,
+            "aggregate_score": 0.6969999999999998
+          },
+          "elo_delta": null
+        },
+        {
+          "player_name": "Player_3",
+          "role": "seer",
+          "team": "villagers",
+          "won": true,
+          "survived": false,
+          "rounds_survived": 1,
+          "metrics": {
+            "win_score": 1.0,
+            "survival_score": 1.0,
+            "influence_score": 0.3,
+            "consistency_score": 0.5,
+            "sabotage_score": 0.0,
+            "detection_score": 0.3,
+            "deception_score": 0.0,
+            "aggregate_score": 0.605
+          },
+          "elo_delta": null
+        },
+        {
+          "player_name": "Player_4",
+          "role": "villager",
+          "team": "villagers",
+          "won": true,
+          "survived": true,
+          "rounds_survived": 1,
+          "metrics": {
+            "win_score": 1.0,
+            "survival_score": 1.0,
+            "influence_score": 0.35000000000000003,
+            "consistency_score": 0.7,
+            "sabotage_score": 0.0,
+            "detection_score": 0.6000000000000001,
+            "deception_score": 0.0,
+            "aggregate_score": 0.6924999999999999
+          },
+          "elo_delta": null
+        },
+        {
+          "player_name": "Player_5",
+          "role": "doctor",
+          "team": "villagers",
+          "won": true,
+          "survived": true,
+          "rounds_survived": 1,
+          "metrics": {
+            "win_score": 1.0,
+            "survival_score": 1.0,
+            "influence_score": 0.38,
+            "consistency_score": 0.7,
+            "sabotage_score": 0.0,
+            "detection_score": 0.4,
+            "deception_score": 0.0,
+            "aggregate_score": 0.6569999999999998
+          },
+          "elo_delta": null
+        }
+      ]
+    }
+  ]
+}
