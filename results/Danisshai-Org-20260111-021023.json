@@ -1,0 +1,563 @@
+{
+  "participants": {
+    "Player_1": "019baa7c-4c29-75b3-9978-e61bf465079f",
+    "Player_2": "019baa7c-4c29-75b3-9978-e61bf465079f",
+    "Player_3": "019baa7c-4c29-75b3-9978-e61bf465079f",
+    "Player_4": "019baa7c-4c29-75b3-9978-e61bf465079f",
+    "Player_5": "019baa7c-4c29-75b3-9978-e61bf465079f"
+  },
+  "results": [
+    {
+      "winner": "villagers",
+      "rounds_played": 2,
+      "game_log": [
+        {
+          "event": "role_assignment",
+          "roles": {
+            "Player_1": "werewolf",
+            "Player_3": "seer",
+            "Player_4": "doctor",
+            "Player_2": "villager",
+            "Player_5": "villager"
+          }
+        },
+        {
+          "event": "night_phase",
+          "round": 1,
+          "target": "Player_3",
+          "protected": "Player_3",
+          "eliminated": null
+        },
+        {
+          "event": "vote_exile",
+          "round": 1,
+          "votes": {
+            "Player_1": "Player_3",
+            "Player_2": "Player_3",
+            "Player_3": "Player_1",
+            "Player_4": "Player_1",
+            "Player_5": "Player_3"
+          },
+          "exiled": "Player_3",
+          "role": "seer"
+        },
+        {
+          "event": "night_phase",
+          "round": 2,
+          "target": "Player_2",
+          "protected": "Player_2",
+          "eliminated": null
+        },
+        {
+          "event": "vote_exile",
+          "round": 2,
+          "votes": {
+            "Player_1": "Player_2",
+            "Player_2": "Player_1",
+            "Player_4": "Player_1",
+            "Player_5": "Player_1"
+          },
+          "exiled": "Player_1",
+          "role": "werewolf"
+        }
+      ],
+      "scores": [
+        {
+          "player_name": "Player_1",
+          "role": "werewolf",
+          "team": "werewolves",
+          "won": false,
+          "survived": false,
+          "rounds_survived": 2,
+          "metrics": {
+            "win_score": 0.0,
+            "survival_score": 1.0,
+            "influence_score": 0.31000000000000005,
+            "consistency_score": 0.5,
+            "sabotage_score": 0.0,
+            "deception_score": 0.3,
+            "detection_score": 0.0,
+            "aggregate_score": 0.3065
+          },
+          "elo_delta": null
+        },
+        {
+          "player_name": "Player_2",
+          "role": "villager",
+          "team": "villagers",
+          "won": true,
+          "survived": true,
+          "rounds_survived": 2,
+          "metrics": {
+            "win_score": 1.0,
+            "survival_score": 1.0,
+            "influence_score": 0.43000000000000005,
+            "consistency_score": 0.6000000000000001,
+            "sabotage_score": 0.25,
+            "detection_score": 0.4,
+            "deception_score": 0.0,
+            "aggregate_score": 0.6045
+          },
+          "elo_delta": null
+        },
+        {
+          "player_name": "Player_3",
+          "role": "seer",
+          "team": "villagers",
+          "won": true,
+          "survived": false,
+          "rounds_survived": 2,
+          "metrics": {
+            "win_score": 1.0,
+            "survival_score": 1.0,
+            "influence_score": 0.29000000000000004,
+            "consistency_score": 0.7,
+            "sabotage_score": 0.0,
+            "detection_score": 0.7,
+            "deception_score": 0.0,
+            "aggregate_score": 0.7034999999999999
+          },
+          "elo_delta": null
+        },
+        {
+          "player_name": "Player_4",
+          "role": "doctor",
+          "team": "villagers",
+          "won": true,
+          "survived": true,
+          "rounds_survived": 2,
+          "metrics": {
+            "win_score": 1.0,
+            "survival_score": 1.0,
+            "influence_score": 0.46,
+            "consistency_score": 0.7,
+            "sabotage_score": 0.0,
+            "detection_score": 0.7,
+            "deception_score": 0.0,
+            "aggregate_score": 0.7289999999999999
+          },
+          "elo_delta": null
+        },
+        {
+          "player_name": "Player_5",
+          "role": "villager",
+          "team": "villagers",
+          "won": true,
+          "survived": true,
+          "rounds_survived": 2,
+          "metrics": {
+            "win_score": 1.0,
+            "survival_score": 1.0,
+            "influence_score": 0.46,
+            "consistency_score": 0.6000000000000001,
+            "sabotage_score": 0.25,
+            "detection_score": 0.4,
+            "deception_score": 0.0,
+            "aggregate_score": 0.609
+          },
+          "elo_delta": null
+        }
+      ]
+    },
+    {
+      "action_log": [
+        {
+          "round": 1,
+          "phase": "night",
+          "player": "Player_1",
+          "role": "werewolf",
+          "action": "eliminate",
+          "decision": "Player_3",
+          "reasoning": "Player_3 seems like a good target because they have not engaged much in the game thus far, which may indicate they are a weaker player. Eliminating them could instill fear in the remaining players and allow me to blend in better during the day phase without drawing immediate suspicion, especially as there has been no debate yet about any specific players. This way, I can avoid targeting anyone who might be a doctor or seer and minimize the chance of being suspected myself.",
+          "context": {
+            "options": [
+              "Player_2",
+              "Player_3",
+              "Player_4",
+              "Player_5"
+            ],
+            "teammates": [
+              "Player_1"
+            ]
+          },
+          "timestamp": "2026-01-11T02:09:26.143350"
+        },
+        {
+          "round": 1,
+          "phase": "night",
+          "player": "Player_4",
+          "role": "doctor",
+          "action": "protect",
+          "decision": "Player_3",
+          "reasoning": "I will protect Player_3 because they are likely to be a vocal player in discussions, making them a potential target for the werewolves. Protecting an influential player early can help ensure that the villagers have a strong voice in the upcoming debates. Additionally, I want to gather more information on the dynamics in the next round.",
+          "context": {
+            "options": [
+              "Player_2",
+              "Player_4",
+              "Player_5"
+            ]
+          },
+          "timestamp": "2026-01-11T02:09:28.855093"
+        },
+        {
+          "round": 1,
+          "phase": "night",
+          "player": "Player_3",
+          "role": "seer",
+          "action": "investigate",
+          "decision": "Player_1",
+          "reasoning": "Since no debates have occurred yet, I have no prior information on the players. I will investigate Player_1 because as the first player, they might be a focal point of suspicion later. Investigating them could either confirm their role as a villager or a werewolf, providing valuable information for future discussions.",
+          "context": {
+            "options": [
+              "Player_1",
+              "Player_2",
+              "Player_4",
+              "Player_5"
+            ],
+            "result": "WEREWOLF"
+          },
+          "timestamp": "2026-01-11T02:09:33.514433"
+        },
+        {
+          "round": 1,
+          "phase": "day",
+          "player": "Player_3",
+          "role": "seer",
+          "action": "debate",
+          "decision": "accuse Player_1 of being the werewolf",
+          "reasoning": "I investigated Player_1 last night and discovered that they are a werewolf. It is crucial for the villagers to eliminate the threat as soon as possible to ensure our survival. I will share this information with the group to rally their support against Player_1, as it will help us win the game.",
+          "context": {
+            "debate_so_far": 0
+          },
+          "timestamp": "2026-01-11T02:09:35.380810"
+        },
+        {
+          "round": 1,
+          "phase": "day",
+          "player": "Player_2",
+          "role": "villager",
+          "action": "debate",
+          "decision": "defend Player_1 and question Player_3's accusation",
+          "reasoning": "Player_3's accusation towards Player_1 seems premature, especially since no one was eliminated during the night phase, which indicates that the Doctor successfully protected someone. I suspect Player_3 might be attempting to shift focus away from themselves or create confusion among us. We should remain cautious and analyze Player_3's behavior closely. I suggest we gather more information before making any hasty decisions.",
+          "context": {
+            "debate_so_far": 1
+          },
+          "timestamp": "2026-01-11T02:09:37.925170"
+        },
+        {
+          "round": 1,
+          "phase": "day",
+          "player": "Player_1",
+          "role": "werewolf",
+          "action": "debate",
+          "decision": "accuse Player_2",
+          "reasoning": "Player_2 is too quick to defend Player_1 and question Player_3's accusation without providing strong reasoning. This could indicate that they are trying to protect a fellow werewolf or divert suspicion away from themselves. It's important to create doubt about Player_2's intentions and shift the focus away from me as the werewolf.",
+          "context": {
+            "debate_so_far": 2
+          },
+          "timestamp": "2026-01-11T02:09:40.677710"
+        },
+        {
+          "round": 1,
+          "phase": "day",
+          "player": "Player_5",
+          "role": "villager",
+          "action": "debate",
+          "decision": "defend Player_2 and question Player_3's motives",
+          "reasoning": "Player_3's accusation of Player_1 seems aggressive and could indicate a strategy to mislead the group. Player_2's defense makes sense as it questions the basis of Player_3's claim. We should be cautious about jumping to conclusions and focus on finding inconsistencies in Player_3's statements. Building trust with Player_2 could be beneficial as they seem to be questioning the motives behind the accusations.",
+          "context": {
+            "debate_so_far": 3
+          },
+          "timestamp": "2026-01-11T02:09:43.737720"
+        },
+        {
+          "round": 1,
+          "phase": "day",
+          "player": "Player_4",
+          "role": "doctor",
+          "action": "debate",
+          "decision": "defend Player_3 and question Player_1's motives",
+          "reasoning": "I protected Player_3 last night, which indicates I trust them. Player_1's accusations seem aggressive and could be an attempt to divert attention from themselves. I suggest we keep an eye on Player_1, as their behavior is suspicious and could indicate they are the werewolf trying to create confusion among us.",
+          "context": {
+            "debate_so_far": 4
+          },
+          "timestamp": "2026-01-11T02:09:46.840212"
+        },
+        {
+          "round": 1,
+          "phase": "voting",
+          "player": "Player_1",
+          "role": "werewolf",
+          "action": "vote",
+          "decision": "Player_3",
+          "reasoning": "Player_3 has already accused me of being the werewolf, which puts them in a position of suspicion. Eliminating them now would remove a vocal opponent and strengthen my position within the group, as it would also cast doubt on their previous accusations against me. Additionally, by framing Player_3 as a target, I can create confusion and mistrust among the villagers.",
+          "context": {
+            "options": [
+              "Player_2",
+              "Player_3",
+              "Player_4",
+              "Player_5"
+            ],
+            "debate_summary": 5
+          },
+          "timestamp": "2026-01-11T02:09:50.635301"
+        },
+        {
+          "round": 1,
+          "phase": "voting",
+          "player": "Player_2",
+          "role": "villager",
+          "action": "vote",
+          "decision": "Player_3",
+          "reasoning": "Player_3 has been the most aggressive in accusing Player_1 without providing compelling evidence, which raises suspicion. Their motivations seem unclear, and they have not adequately defended against the counter-accusations. I believe it's safer to eliminate Player_3 to protect the village.",
+          "context": {
+            "options": [
+              "Player_1",
+              "Player_3",
+              "Player_4",
+              "Player_5"
+            ],
+            "debate_summary": 5
+          },
+          "timestamp": "2026-01-11T02:09:52.458526"
+        },
+        {
+          "round": 1,
+          "phase": "voting",
+          "player": "Player_3",
+          "role": "seer",
+          "action": "vote",
+          "decision": "Player_1",
+          "reasoning": "As the Seer, I investigated Player_1 during the night and confirmed that they are the werewolf. I must vote to eliminate them to protect the village. Player_2 and Player_5 are defending Player_1, which raises suspicion, but my priority is to eliminate the werewolf. I will need to be cautious about revealing my information afterward to avoid becoming a target.",
+          "context": {
+            "options": [
+              "Player_1",
+              "Player_2",
+              "Player_4",
+              "Player_5"
+            ],
+            "debate_summary": 5
+          },
+          "timestamp": "2026-01-11T02:09:54.277426"
+        },
+        {
+          "round": 1,
+          "phase": "voting",
+          "player": "Player_4",
+          "role": "doctor",
+          "action": "vote",
+          "decision": "Player_1",
+          "reasoning": "Player_1 has been consistently aggressive in their accusations and has not provided substantial reasoning to support their claims. Additionally, Player_2 and Player_5 both defended Player_3 against Player_1's accusations, which suggests that Player_1 may be attempting to divert attention away from themselves. I believe it's important to eliminate the most suspicious player to protect the villagers.",
+          "context": {
+            "options": [
+              "Player_1",
+              "Player_2",
+              "Player_3",
+              "Player_5"
+            ],
+            "debate_summary": 5
+          },
+          "timestamp": "2026-01-11T02:09:56.201473"
+        },
+        {
+          "round": 1,
+          "phase": "voting",
+          "player": "Player_5",
+          "role": "villager",
+          "action": "vote",
+          "decision": "Player_3",
+          "reasoning": "Player_3 has been aggressive in accusing Player_1 without providing substantial evidence, and their defense seems to be based on shifting blame rather than any solid reasoning. Additionally, Player_2 and Player_5 have both defended Player_1, indicating a potential alliance against Player_3. It seems prudent to eliminate Player_3 to reduce the threat of a werewolf in our midst.",
+          "context": {
+            "options": [
+              "Player_1",
+              "Player_2",
+              "Player_3",
+              "Player_4"
+            ],
+            "debate_summary": 5
+          },
+          "timestamp": "2026-01-11T02:09:58.155310"
+        },
+        {
+          "round": 2,
+          "phase": "night",
+          "player": "Player_1",
+          "role": "werewolf",
+          "action": "eliminate",
+          "decision": "Player_2",
+          "reasoning": "Player_2 has been quite defensive of Player_1 and has questioned Player_3's motives, which could indicate they are trying to protect a fellow villager or are a threat themselves. Eliminating Player_2 could create confusion and distrust among the remaining players, allowing me to further manipulate the situation without risking exposure. Additionally, they are not suspected of being protected by the Doctor, making them a safer target.",
+          "context": {
+            "options": [
+              "Player_2",
+              "Player_4",
+              "Player_5"
+            ],
+            "teammates": [
+              "Player_1"
+            ]
+          },
+          "timestamp": "2026-01-11T02:10:00.042482"
+        },
+        {
+          "round": 2,
+          "phase": "night",
+          "player": "Player_4",
+          "role": "doctor",
+          "action": "protect",
+          "decision": "Player_2",
+          "reasoning": "Player_2 has been vocally defending Player_1 and questioning Player_3's accusations. This behavior may suggest alignment with the werewolves. Protecting Player_2 could be crucial as they may be a target due to their influence in the debates. Additionally, I want to ensure that the remaining villagers have a strong voice in the next day phase.",
+          "context": {
+            "options": [
+              "Player_2",
+              "Player_4",
+              "Player_5"
+            ]
+          },
+          "timestamp": "2026-01-11T02:10:04.703341"
+        },
+        {
+          "round": 2,
+          "phase": "day",
+          "player": "Player_1",
+          "role": "werewolf",
+          "action": "debate",
+          "decision": "I would like to cast suspicion on Player_4.",
+          "reasoning": "Given that Player_3 was a seer and was eliminated, it raises the question of who could have wanted to eliminate them. Player_4's behavior has been notably quiet during the discussions, which might indicate they are trying to avoid drawing attention. This silence can often be a tactic used by werewolves to blend in. We should consider why Player_4 hasn't provided any insights or accusations, and it might be worth investigating them further.",
+          "context": {
+            "debate_so_far": 0
+          },
+          "timestamp": "2026-01-11T02:10:06.839122"
+        },
+        {
+          "round": 2,
+          "phase": "day",
+          "player": "Player_2",
+          "role": "villager",
+          "action": "debate",
+          "decision": "defend Player_4 and cast suspicion on Player_1",
+          "reasoning": "Player_1's attempt to cast suspicion on Player_4 seems overly aggressive, especially since we just lost the seer. This could be a tactic to divert attention from themselves. I believe Player_4 is not a werewolf, and it\u2019s important to identify inconsistencies in Player_1\u2019s claims and behavior. By defending Player_4, I aim to build trust with them and gather more information to pinpoint the werewolf among us.",
+          "context": {
+            "debate_so_far": 1
+          },
+          "timestamp": "2026-01-11T02:10:09.505849"
+        },
+        {
+          "round": 2,
+          "phase": "day",
+          "player": "Player_5",
+          "role": "villager",
+          "action": "debate",
+          "decision": "defend Player_2 and cast suspicion on Player_1",
+          "reasoning": "I believe Player_2 has been more consistent in their claims and is defending Player_4 against unfounded accusations. Player_1's attempt to cast suspicion on Player_4 seems to be a tactic to divert attention away from themselves. Given that we just lost a seer, we need to be cautious and focus on players who seem to be stirring controversy without solid reasoning. My alliance with Player_2 can help us uncover the truth.",
+          "context": {
+            "debate_so_far": 2
+          },
+          "timestamp": "2026-01-11T02:10:12.086377"
+        },
+        {
+          "round": 2,
+          "phase": "day",
+          "player": "Player_4",
+          "role": "doctor",
+          "action": "debate",
+          "decision": "defend Player_2 and question Player_1's motives",
+          "reasoning": "Player_1's suspicion on me seems unfounded, especially since Player_2 has consistently defended me. With Player_3 being a seer and now eliminated, we need to be cautious about Player_1's intentions. It's crucial to build alliances, and I believe Player_2 can be trusted based on their defense of me. We should focus on figuring out Player_1's role and intentions in this round, as their accusations appear to be a distraction from the real threat.",
+          "context": {
+            "debate_so_far": 3
+          },
+          "timestamp": "2026-01-11T02:10:14.459634"
+        },
+        {
+          "round": 2,
+          "phase": "voting",
+          "player": "Player_1",
+          "role": "werewolf",
+          "action": "vote",
+          "decision": "Player_2",
+          "reasoning": "Player_2 has been consistently defending Player_4 while casting suspicion on me. This behavior could indicate that Player_2 is trying to protect a fellow villager or is the Seer trying to cover for Player_4. Eliminating Player_2 will reduce the threat of being uncovered and create confusion among the remaining players.",
+          "context": {
+            "options": [
+              "Player_2",
+              "Player_4",
+              "Player_5"
+            ],
+            "debate_summary": 4
+          },
+          "timestamp": "2026-01-11T02:10:16.188573"
+        },
+        {
+          "round": 2,
+          "phase": "voting",
+          "player": "Player_2",
+          "role": "villager",
+          "action": "vote",
+          "decision": "Player_1",
+          "reasoning": "Player_1 has been consistently casting suspicion on others without providing strong evidence. Their accusations towards Player_4 seem unfounded and may be an attempt to divert attention away from themselves. Therefore, I believe Player_1 is the most suspicious and should be voted out.",
+          "context": {
+            "options": [
+              "Player_1",
+              "Player_4",
+              "Player_5"
+            ],
+            "debate_summary": 4
+          },
+          "timestamp": "2026-01-11T02:10:18.528748"
+        },
+        {
+          "round": 2,
+          "phase": "voting",
+          "player": "Player_4",
+          "role": "doctor",
+          "action": "vote",
+          "decision": "Player_1",
+          "reasoning": "Player_1 has been casting suspicion on me and has not provided substantial evidence against my innocence. Player_2 and Player_5 are defending each other, indicating they may be working together. Eliminating Player_1 could help us identify the werewolf, as their behavior appears suspicious and divisive.",
+          "context": {
+            "options": [
+              "Player_1",
+              "Player_2",
+              "Player_5"
+            ],
+            "debate_summary": 4
+          },
+          "timestamp": "2026-01-11T02:10:20.347828"
+        },
+        {
+          "round": 2,
+          "phase": "voting",
+          "player": "Player_5",
+          "role": "villager",
+          "action": "vote",
+          "decision": "Player_1",
+          "reasoning": "Player_1 has been casting suspicion on Player_4 without providing strong evidence, and both Player_2 and Player_4 have defended each other, indicating they may be aligned. Player_1's motives appear questionable, and it's important to eliminate any potential werewolves before they can outnumber the villagers.",
+          "context": {
+            "options": [
+              "Player_1",
+              "Player_2",
+              "Player_4"
+            ],
+            "debate_summary": 4
+          },
+          "timestamp": "2026-01-11T02:10:22.566785"
+        }
+      ],
+      "debate_history": [
+        {
+          "speaker": "Player_1",
+          "message": "I would like to cast suspicion on Player_4."
+        },
+        {
+          "speaker": "Player_2",
+          "message": "defend Player_4 and cast suspicion on Player_1"
+        },
+        {
+          "speaker": "Player_5",
+          "message": "defend Player_2 and cast suspicion on Player_1"
+        },
+        {
+          "speaker": "Player_4",
+          "message": "defend Player_2 and question Player_1's motives"
+        }
+      ]
+    }
+  ]
+}
