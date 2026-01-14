@@ -11,7 +11,7 @@
 # This ensures fair ranking comparison between games, as per the Werewolf Arena
 # paper (arXiv:2407.13943) which establishes 8 players as the balanced configuration:
 #   - 2 Werewolves
-#   - 1 Seer
+#   - 1 Seer 
 #   - 1 Doctor
 #   - 4 Villagers
 #
