@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-01-14T16:54:32.137856Z",
+  "last_updated": "2026-01-14T17:20:13.908864Z",
   "total_agents": 1,
   "rankings": [
     {
       "agent_id": "019baa7c-4c29-75b3-9978-e61bf465079f",
-      "general_elo": 936.0,
-      "werewolf_elo": 1025.6,
-      "villager_elo": 906.1,
-      "games_played": 8,
-      "wins": 2,
-      "losses": 6,
+      "general_elo": 872.0,
+      "werewolf_elo": 1047.7,
+      "villager_elo": 823.4,
+      "games_played": 16,
+      "wins": 4,
+      "losses": 12,
       "win_rate": 25.0,
-      "games_as_werewolf": 2,
-      "games_as_villager": 6,
-      "wins_as_werewolf": 2,
+      "games_as_werewolf": 4,
+      "games_as_villager": 12,
+      "wins_as_werewolf": 4,
       "wins_as_villager": 0,
       "rank": 1
     }

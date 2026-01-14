@@ -1,7 +1,18 @@
 {
-  "last_updated": "2026-01-14T16:54:32.137712Z",
-  "total_games": 1,
+  "last_updated": "2026-01-14T17:20:13.908727Z",
+  "total_games": 2,
   "games": [
+    {
+      "filename": "Danisshai-Org-20260114-171437.json",
+      "start_time": "2026-01-14T17:13:19.057773",
+      "end_time": "2026-01-14T17:14:36.800296",
+      "participants": [
+        "019baa7c-4c29-75b3-9978-e61bf465079f"
+      ],
+      "participant_count": 8,
+      "winner": "werewolves",
+      "traceability_url": "https://agentbeats.dev/Danisshai-Org-20260114-171437"
+    },
     {
       "filename": "Danisshai-Org-20260114-165315.json",
       "start_time": "2026-01-14T16:51:40.762941",
