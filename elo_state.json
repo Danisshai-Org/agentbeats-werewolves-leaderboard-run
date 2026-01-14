@@ -1,5 +1,20 @@
 {
-  "last_updated": "2026-01-14T15:55:17.272841Z",
-  "agents": {},
-  "processed_games": []
+  "last_updated": "2026-01-14T16:49:18.423555Z",
+  "agents": {
+    "019baa7c-4c29-75b3-9978-e61bf465079f": {
+      "general_elo": 936.0,
+      "werewolf_elo": 1027.7,
+      "villager_elo": 908.2,
+      "games_played": 8,
+      "wins": 2,
+      "losses": 6,
+      "games_as_werewolf": 2,
+      "games_as_villager": 6,
+      "wins_as_werewolf": 2,
+      "wins_as_villager": 0
+    }
+  },
+  "processed_games": [
+    "Danisshai-Org-20260114-164033.json"
+  ]
 }
