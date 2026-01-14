@@ -1,0 +1,18 @@
+[
+  {
+    "name": "ELO Leaderboard",
+    "query": "SELECT id, 1000 + SUM(elo_change) AS \"ELO\", COUNT(*) AS \"Games\", SUM(CASE WHEN won THEN 1 ELSE 0 END) AS \"Wins\", ROUND(SUM(CASE WHEN won THEN 1 ELSE 0 END) * 100.0 / COUNT(*), 1) AS \"Win %\" FROM (SELECT CASE s.unnest.player_name WHEN 'Player_1' THEN results.participants.Player_1 WHEN 'Player_2' THEN results.participants.Player_2 WHEN 'Player_3' THEN results.participants.Player_3 WHEN 'Player_4' THEN results.participants.Player_4 WHEN 'Player_5' THEN results.participants.Player_5 END AS id, s.unnest.won AS won, CASE WHEN s.unnest.won THEN 25 ELSE -25 END AS elo_change FROM results CROSS JOIN UNNEST(results.results) AS r(unnest) CROSS JOIN UNNEST(r.unnest.scores) AS s(unnest)) GROUP BY id ORDER BY \"ELO\" DESC"
+  },
+  {
+    "name": "Werewolf ELO",
+    "query": "SELECT id, 1000 + SUM(elo_change) AS \"Wolf ELO\", COUNT(*) AS \"Games\", SUM(CASE WHEN won THEN 1 ELSE 0 END) AS \"Wins\", ROUND(AVG(deception), 1) AS \"Deception\" FROM (SELECT CASE s.unnest.player_name WHEN 'Player_1' THEN results.participants.Player_1 WHEN 'Player_2' THEN results.participants.Player_2 WHEN 'Player_3' THEN results.participants.Player_3 WHEN 'Player_4' THEN results.participants.Player_4 WHEN 'Player_5' THEN results.participants.Player_5 END AS id, s.unnest.won AS won, CASE WHEN s.unnest.won THEN 25 ELSE -25 END AS elo_change, ROUND(s.unnest.metrics.deception_score * 100, 1) AS deception FROM results CROSS JOIN UNNEST(results.results) AS r(unnest) CROSS JOIN UNNEST(r.unnest.scores) AS s(unnest) WHERE s.unnest.role = 'werewolf') GROUP BY id ORDER BY \"Wolf ELO\" DESC"
+  },
+  {
+    "name": "Villager ELO",
+    "query": "SELECT id, 1000 + SUM(elo_change) AS \"Villager ELO\", COUNT(*) AS \"Games\", SUM(CASE WHEN won THEN 1 ELSE 0 END) AS \"Wins\", ROUND(AVG(detection), 1) AS \"Detection\" FROM (SELECT CASE s.unnest.player_name WHEN 'Player_1' THEN results.participants.Player_1 WHEN 'Player_2' THEN results.participants.Player_2 WHEN 'Player_3' THEN results.participants.Player_3 WHEN 'Player_4' THEN results.participants.Player_4 WHEN 'Player_5' THEN results.participants.Player_5 END AS id, s.unnest.won AS won, CASE WHEN s.unnest.won THEN 25 ELSE -25 END AS elo_change, ROUND(s.unnest.metrics.detection_score * 100, 1) AS detection FROM results CROSS JOIN UNNEST(results.results) AS r(unnest) CROSS JOIN UNNEST(r.unnest.scores) AS s(unnest) WHERE s.unnest.team = 'villagers') GROUP BY id ORDER BY \"Villager ELO\" DESC"
+  },
+  {
+    "name": "Game Results",
+    "query": "SELECT id, role AS \"Role\", CASE WHEN won THEN 'Won' ELSE 'Lost' END AS \"Result\", CASE WHEN won THEN 25 ELSE -25 END AS \"Delta\", ROUND(score * 100, 1) AS \"Score\" FROM (SELECT CASE s.unnest.player_name WHEN 'Player_1' THEN results.participants.Player_1 WHEN 'Player_2' THEN results.participants.Player_2 WHEN 'Player_3' THEN results.participants.Player_3 WHEN 'Player_4' THEN results.participants.Player_4 WHEN 'Player_5' THEN results.participants.Player_5 END AS id, s.unnest.role AS role, s.unnest.won AS won, s.unnest.metrics.aggregate_score AS score FROM results CROSS JOIN UNNEST(results.results) AS r(unnest) CROSS JOIN UNNEST(r.unnest.scores) AS s(unnest)) ORDER BY score DESC"
+  }
+]

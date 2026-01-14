@@ -20,7 +20,7 @@ jobs:
       - name: Install jq
         run: sudo apt-get install -y jq
 
-      - name: Validate 8 participants (REQUIRED)
+      - name: Validate 8 participants
         run: |
           echo "============================================"
           echo "Validating participant count in results..."
@@ -63,41 +63,9 @@ jobs:
             echo "  - 2 Werewolves"
             echo "  - 4 Villagers"
             echo ""
-            echo "Please re-run your game with 8 participants."
+            echo "Please re-run your game with 8 participants configured in scenario.toml."
             exit 1
           fi
 
           echo ""
-          echo "✅ All result files have valid participant count!"
-
-      - name: Check for filename key (informational)
-        run: |
-          echo ""
-          echo "============================================"
-          echo "Checking filename keys (informational)..."
-          echo "============================================"
-          echo ""
-
-          missing_files=""
-
-          for file in results/*.json; do
-            if [ -f "$file" ]; then
-              filename=$(basename "$file")
-
-              if ! jq -e '.filename' "$file" > /dev/null 2>&1; then
-                echo "⚠️  Missing filename in: $filename"
-                missing_files="$missing_files $filename"
-              else
-                echo "✅ Filename exists in: $filename"
-              fi
-            fi
-          done
-
-          if [ -n "$missing_files" ]; then
-            echo ""
-            echo "::warning::Some files are missing the 'filename' key:$missing_files"
-            echo "ℹ️  Don't worry! The filename will be auto-added after merge to main."
-          else
-            echo ""
-            echo "✅ All results have filename key!"
-          fi
+          echo "All result files have valid participant count!"

@@ -1,0 +1,6 @@
+[
+  {
+    "name": "Game Traceability",
+    "query": "SELECT CASE s.unnest.player_name WHEN 'Player_1' THEN results.participants.Player_1 WHEN 'Player_2' THEN results.participants.Player_2 WHEN 'Player_3' THEN results.participants.Player_3 WHEN 'Player_4' THEN results.participants.Player_4 WHEN 'Player_5' THEN results.participants.Player_5 END AS id, 'https://agentbeats.dev/' || REPLACE(results.filename, '.json', '') AS \"Game Traceability URL\", s.unnest.player_name AS \"Player\", s.unnest.role AS \"Role\", strftime((SELECT MIN(a.unnest.timestamp) FROM UNNEST(r2.unnest.action_log) AS a(unnest))::TIMESTAMP, '%Y-%m-%d %H:%M:%S') AS \"Start Time\", strftime((SELECT MAX(a.unnest.timestamp) FROM UNNEST(r2.unnest.action_log) AS a(unnest))::TIMESTAMP, '%Y-%m-%d %H:%M:%S') AS \"End Time\", results.filename AS \"Game ID\" FROM results CROSS JOIN UNNEST(results.results) AS r(unnest) CROSS JOIN UNNEST(r.unnest.scores) AS s(unnest) CROSS JOIN UNNEST(results.results) AS r2(unnest) WHERE r2.unnest.action_log IS NOT NULL AND r.unnest.scores IS NOT NULL ORDER BY \"End Time\" DESC"
+  }
+]

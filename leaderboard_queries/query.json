@@ -1,0 +1,10 @@
+[
+    {
+      "name": "Game Winner 10",
+      "query": "SELECT id, COUNT(*) AS \"Games Logged ds\", ROUND(AVG(rounds_played),1) AS \"Avg Rounds\" FROM (SELECT results.participants.Player_1 AS id, res.rounds_played AS rounds_played FROM results CROSS JOIN UNNEST(results.results) AS r(res)) GROUP BY id;"
+    },
+    {
+      "name": "Win rate by role",
+      "query": "SELECT s.unnest.role AS id, COUNT(*) AS games_played, SUM(CASE WHEN s.unnest.won THEN 1 ELSE 0 END) AS wins, ROUND(SUM(CASE WHEN s.unnest.won THEN 1 ELSE 0 END) * 1.0 / COUNT(*), 2) AS win_rate FROM results CROSS JOIN UNNEST(results.results) AS r(unnest) CROSS JOIN UNNEST(r.unnest.scores) AS s(unnest) GROUP BY s.unnest.role ORDER BY win_rate DESC"
+    }
+  ]

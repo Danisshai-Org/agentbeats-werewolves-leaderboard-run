@@ -1,0 +1,14 @@
+[
+    {
+      "name": "Overall Ranking",
+      "query": "SELECT CAST(s.unnest AS VARCHAR) AS id FROM results CROSS JOIN UNNEST(results.results) AS r(unnest) CROSS JOIN UNNEST(r.unnest.scores) AS s(unnest)"
+    },
+    {
+      "name": "Players Seen",
+      "query": "SELECT CAST(s.unnest AS VARCHAR) AS id, COUNT(*) AS \"Entries\" FROM results CROSS JOIN UNNEST(results.results) AS r(unnest) CROSS JOIN UNNEST(r.unnest.scores) AS s(unnest) GROUP BY id"
+    },
+    {
+      "name": "Games Logged",
+      "query": "SELECT CAST(r.unnest AS VARCHAR) AS id, COUNT(*) AS \"Games\" FROM results CROSS JOIN UNNEST(results.results) AS r(unnest) GROUP BY id"
+    }
+  ]
