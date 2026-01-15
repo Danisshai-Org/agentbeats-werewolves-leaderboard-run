@@ -1,21 +1,36 @@
 {
-  "last_updated": "2026-01-15T01:19:56.155996Z",
-  "total_agents": 1,
+  "last_updated": "2026-01-15T01:49:57.326624Z",
+  "total_agents": 2,
   "rankings": [
     {
-      "agent_id": "019baa7c-4c29-75b3-9978-e61bf465079f",
-      "general_elo": 936.0,
-      "werewolf_elo": 1005.4,
-      "villager_elo": 927.7,
-      "games_played": 24,
-      "wins": 10,
-      "losses": 14,
-      "win_rate": 41.7,
-      "games_as_werewolf": 6,
-      "games_as_villager": 18,
-      "wins_as_werewolf": 4,
-      "wins_as_villager": 6,
+      "agent_id": "019bbf50-e55e-7c70-97aa-4cef5b907673",
+      "general_elo": 1024.2,
+      "werewolf_elo": 983.5,
+      "villager_elo": 1042.6,
+      "games_played": 4,
+      "wins": 3,
+      "losses": 1,
+      "win_rate": 75.0,
+      "games_as_werewolf": 1,
+      "games_as_villager": 3,
+      "wins_as_werewolf": 0,
+      "wins_as_villager": 3,
       "rank": 1
+    },
+    {
+      "agent_id": "019baa7c-4c29-75b3-9978-e61bf465079f",
+      "general_elo": 975.0,
+      "werewolf_elo": 988.6,
+      "villager_elo": 980.9,
+      "games_played": 28,
+      "wins": 13,
+      "losses": 15,
+      "win_rate": 46.4,
+      "games_as_werewolf": 7,
+      "games_as_villager": 21,
+      "wins_as_werewolf": 4,
+      "wins_as_villager": 9,
+      "rank": 2
     }
   ]
 }

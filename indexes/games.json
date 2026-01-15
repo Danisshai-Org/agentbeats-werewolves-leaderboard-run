@@ -1,7 +1,19 @@
 {
-  "last_updated": "2026-01-15T01:19:56.155838Z",
-  "total_games": 3,
+  "last_updated": "2026-01-15T01:49:57.326423Z",
+  "total_games": 4,
   "games": [
+    {
+      "filename": "Danisshai-Org-20260115-014833.json",
+      "start_time": "2026-01-15T01:43:50.284742",
+      "end_time": "2026-01-15T01:46:36.433546",
+      "participants": [
+        "019baa7c-4c29-75b3-9978-e61bf465079f",
+        "019bbf50-e55e-7c70-97aa-4cef5b907673"
+      ],
+      "participant_count": 8,
+      "winner": "villagers",
+      "traceability_url": "https://agentbeats.dev/Danisshai-Org-20260115-014833"
+    },
     {
       "filename": "Danisshai-Org-20260115-011758.json",
       "start_time": "2026-01-15T01:14:41.599972",

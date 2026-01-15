@@ -1,0 +1,72 @@
+{
+  "agent_id": "019bbf50-e55e-7c70-97aa-4cef5b907673",
+  "last_updated": "2026-01-15T01:49:57.327223Z",
+  "current_elo": {
+    "general": 1024.2,
+    "werewolf": 983.5,
+    "villager": 1042.6
+  },
+  "stats": {
+    "games_played": 4,
+    "wins": 3,
+    "losses": 1,
+    "games_as_werewolf": 1,
+    "games_as_villager": 3,
+    "wins_as_werewolf": 0,
+    "wins_as_villager": 3
+  },
+  "game_history": [
+    {
+      "game": "Danisshai-Org-20260115-014833.json",
+      "player_name": "Player_1",
+      "role": "villager",
+      "team": "villagers",
+      "won": true,
+      "elo_before": 1000,
+      "elo_delta": 14.5,
+      "elo_after": 1014.5,
+      "aggregate_score": 56.5,
+      "start_time": "2026-01-15T01:43:50.284742",
+      "end_time": "2026-01-15T01:46:36.433546"
+    },
+    {
+      "game": "Danisshai-Org-20260115-014833.json",
+      "player_name": "Player_2",
+      "role": "seer",
+      "team": "villagers",
+      "won": true,
+      "elo_before": 1014.5,
+      "elo_delta": 14.2,
+      "elo_after": 1028.7,
+      "aggregate_score": 65.7,
+      "start_time": "2026-01-15T01:43:50.284742",
+      "end_time": "2026-01-15T01:46:36.433546"
+    },
+    {
+      "game": "Danisshai-Org-20260115-014833.json",
+      "player_name": "Player_3",
+      "role": "villager",
+      "team": "villagers",
+      "won": true,
+      "elo_before": 1028.7,
+      "elo_delta": 13.9,
+      "elo_after": 1042.6,
+      "aggregate_score": 68.1,
+      "start_time": "2026-01-15T01:43:50.284742",
+      "end_time": "2026-01-15T01:46:36.433546"
+    },
+    {
+      "game": "Danisshai-Org-20260115-014833.json",
+      "player_name": "Player_4",
+      "role": "werewolf",
+      "team": "werewolves",
+      "won": false,
+      "elo_before": 1042.6,
+      "elo_delta": -18.4,
+      "elo_after": 1024.2,
+      "aggregate_score": 34.0,
+      "start_time": "2026-01-15T01:43:50.284742",
+      "end_time": "2026-01-15T01:46:36.433546"
+    }
+  ]
+}
