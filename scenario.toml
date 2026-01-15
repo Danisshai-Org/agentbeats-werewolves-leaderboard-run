@@ -55,7 +55,7 @@ name = "Player_4"
 env = { OPENAI_API_KEY = "${OPENAI_API_KEY}" }
 
 # Player 5
-[[participants]]
+[[participants]] 
 agentbeats_id = "019baa7c-4c29-75b3-9978-e61bf465079f"
 name = "Player_5"
 env = { OPENAI_API_KEY = "${OPENAI_API_KEY}" }
