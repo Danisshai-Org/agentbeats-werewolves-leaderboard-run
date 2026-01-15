@@ -14,7 +14,7 @@
 #   - 1 Seer 
 #   - 1 Doctor
 #   - 4 Villagers
-#
+# 
 # IMPORTANT: You need API keys for ALL agents you want to compete against.
 # If an agent uses a paid model (GPT-4, Claude), you need that API key.
 
