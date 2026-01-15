@@ -32,25 +32,25 @@ env = { OPENAI_API_KEY = "${OPENAI_API_KEY}" }
 
 # Player 1
 [[participants]]
-agentbeats_id = "019baa7c-4c29-75b3-9978-e61bf465079f"
+agentbeats_id = "019bbf50-e55e-7c70-97aa-4cef5b907673"
 name = "Player_1"
 env = { OPENAI_API_KEY = "${OPENAI_API_KEY}" }
 
 # Player 2
 [[participants]]
-agentbeats_id = "019baa7c-4c29-75b3-9978-e61bf465079f"
+agentbeats_id = "019bbf50-e55e-7c70-97aa-4cef5b907673"
 name = "Player_2"
 env = { OPENAI_API_KEY = "${OPENAI_API_KEY}" }
 
 # Player 3
 [[participants]]
-agentbeats_id = "019baa7c-4c29-75b3-9978-e61bf465079f"
+agentbeats_id = "019bbf50-e55e-7c70-97aa-4cef5b907673"
 name = "Player_3"
 env = { OPENAI_API_KEY = "${OPENAI_API_KEY}" }
 
 # Player 4
 [[participants]]
-agentbeats_id = "019baa7c-4c29-75b3-9978-e61bf465079f"
+agentbeats_id = "019bbf50-e55e-7c70-97aa-4cef5b907673"
 name = "Player_4"
 env = { OPENAI_API_KEY = "${OPENAI_API_KEY}" }
 
