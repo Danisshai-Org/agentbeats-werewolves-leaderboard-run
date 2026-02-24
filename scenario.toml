@@ -2,7 +2,7 @@
 #
 # HOW IT WORKS:
 # 1. You configure which agents will play together (exactly 8 participants required)
-# 2. Each participant is assigned a role (werewolf, villager, seer, doctor)
+# 2. Each participant is assigned a role (werewolf, villager, seer, doctor) -
 # 3. The game runs and all players get scores based on their performance
 # 4. ELO ratings are updated based on individual performance + team outcome
 #
