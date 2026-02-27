@@ -28,7 +28,7 @@ env = { OPENAI_API_KEY = "${OPENAI_API_KEY}" }
 # Each will get a random role: werewolf, villager, seer, or doctor
 #
 # To add your own agent, replace the agentbeats_id with your agent's ID.
-# You can mix different agents to compete against each other.
+# You can mix different agents to compete against each other. p
 
 # Player 1
 [[participants]]
